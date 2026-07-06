@@ -1,41 +1,31 @@
 Python module for near field communication
 ==========================================
 
-.. image:: https://badge.fury.io/py/nfcpy.svg
-   :target: https://pypi.python.org/pypi/nfcpy
-   :alt: Python Package
+The **nfcpy** module implements NFC Forum specifications for wireless short-range data exchange with NFC devices and tags. It is written in Python and aims to provide an easy-to-use yet powerful framework for applications integrating NFC.
 
-.. image:: http://readthedocs.org/projects/nfcpy/badge/?version=latest
-   :target: http://nfcpy.readthedocs.io/en/latest/?badge=latest
-   :alt: Documentation
+This repository is a customized version updated to support the **Sony RC-S300 (PaSoRi)** reader/writer.
 
-.. image:: https://github.com/nfcpy/nfcpy/workflows/CI/badge.svg?branch=master
-   :target: https://github.com/nfcpy/nfcpy/actions?workflow=CI
-   :alt: CI Status
+🚀 Quick Start (RC-S300 Support)
+---------------------------------
 
-.. image:: https://codecov.io/gh/nfcpy/nfcpy/branch/master/graph/badge.svg
-   :target: https://codecov.io/gh/nfcpy/nfcpy
-   :alt: Code Coverage
+If you want to use the Sony RC-S300, you can install this version directly via ``pip``::
+
+    pip install git+https://github.com/ajinori-256/nfcpy.git
+
+Hardware Support Status for RC-S300
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* **FeliCa:** **Supported** (Verified to work with communication and ID reading)
+* **ISO/IEC 14443 Type A/B:** *Under development / coming soon*
+
+About This Repository
+---------------------
+
+* **License:** EUPL_
+* **Original Project:** GitHub_
+* **Documentation:** `Read the Docs`_ (Refer to the original documentation for general API usage)
 
 .. _Python: https://www.python.org
 .. _EUPL: https://joinup.ec.europa.eu/software/page/eupl
 .. _GitHub: https://github.com/nfcpy/nfcpy
-.. _issues: https://github.com/nfcpy/nfcpy/issues
-.. _NFC Forum: http://nfc-forum.org/
-.. _PyPI: https://pypi.python.org/pypi/nfcpy
 .. _Read the Docs: https://nfcpy.readthedocs.org/
-.. _Launchpad: https://launchpad.net/nfcpy
-.. _answers: https://answers.launchpad.net/nfcpy
-.. _stackoverflow: http://stackoverflow.com/search?q=%5Bnfc%5D+is%3Aquestion+nfcpy
-
-The **nfcpy** module implements `NFC Forum`_ specifications for
-wireless short-range data exchange with NFC devices and tags. It is
-written in `Python`_ and aims to provide an easy-to-use yet powerful
-framework for applications integrating NFC. The source code is
-licensed under the `EUPL`_ and hosted on `GitHub`_. Release versions
-are published on `PyPI`_ for ``pip install -U nfcpy``. Documentation
-for latest development and active release versions can be found on
-`Read the Docs`_. The GitHub `issues`_ tracker is the place for bug
-reports or related questions. Other questions may have been or get
-answered on the project's Launchpad `answers`_ page or
-`stackoverflow`_.
